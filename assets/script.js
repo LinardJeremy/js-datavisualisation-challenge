@@ -1,21 +1,19 @@
 let ctx = document.getElementById('chart1').getContext('2d');
 let x = document.getElementById("tbodyChart1");
-let list = document.getElementsByTagName("TH");
+let list = document.getElementById("table1").getElementsByTagName("TH");
 let arrayTest = [];
+let arrayCountry=[];
 for (let i=0;i<list.length;i++){
-    if(list[i] === "2002"){
-        console.log(list[i]);
+    if (parseInt( list[i].innerHTML)>2000à{
+       arrayTest.push(list[i].innerHTML);
     }
-
 }
 console.log(arrayTest);
-
-
 // console.log(list);
-let chart1 = new Chart(ctx, {
+let chart1 = new Chart(ctx, { 
 type : 'line',
 data: {
-    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    labels: arrayTest,
     datasets: [{
         label: 'My First dataset',
         backgroundColor: 'rgb(255, 99, 132)',
