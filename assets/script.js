@@ -28,41 +28,40 @@ for (let i = 0; i < list.length; i++) {
         arrayTest.push(list[i].innerHTML);
     }
 }
+function datasets(label, borderColor, data) {
+    this.label = label;
+    this.borderColor = borderColor;
+    this.data = data;
+  }
+  let dataTest = [105,125,135,145];
+  let z = new datasets("Test","green",dataTest);
+  console.log(z);
+
 console.log(arrayTest);
-// console.log(list);
+console.log(list);
 let chart1 = new Chart(ctx, {
     type: "line",
     data: {
         labels: arrayTest,
+        y: [100,150,300,450,500],
         datasets: [
             {
-                label: "My First dataset",
-                backgroundColor: "rgb(255, 99, 132)",
-                borderColor: "rgb(255, 99, 132)",
-                data: [
-                    0,
-                    100,
-                    200,
-                    300,
-                    400,
-                    500,
-                    600,
-                    700,
-                    800,
-                    900,
-                    1000,
-                    1100,
-                    1200,
-                    1300,
-                    1400,
-                    1500,
-                    1600,
-                    1700,
-                    1800,
-                    1900,
-                    2000,
-                ],
+               
+             label: "Belgium",
+             borderColor: "rgb(255, 99, 132)",
+                 data: [
+                    75,
+                     90,
+                     105,
+                     120
+                 ],
             },
+                { label: "Bulgaria",
+            borderColor: "blue",
+            data :[100,165,189],
+            },
+            z,
+            
         ],
     },
     options: {},
