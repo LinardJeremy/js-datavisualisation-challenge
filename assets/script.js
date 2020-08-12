@@ -36,22 +36,19 @@ for( let j=0;j<listTd.length;j++){
         arrayCountry.push(listTd[j].innerHTML);
     }
 }
-console.log(arrayCountry);
 function datasets(label, borderColor, data) {
     this.label = label;
     this.borderColor = borderColor;
     this.data = data;
   }
   let dataTest = [105,125,135,145];
-  let z = new datasets(arrayCountry[3],"green",dataTest);
+  let z = new datasets(arrayCountry[3]);
+let arrayOFObject = [];
+for (let t=0;t<arrayCountry.length;t++){
+    let kk =  new datasets(arrayCountry[t],"green",150);
+    arrayOFObject.push(kk);
+}
 
-  
-
-
-  console.log(z);
-
-console.log(arrayTest);
-console.log(list);
 let chart1 = new Chart(ctx, {
     type: "line",
     data: {
@@ -74,9 +71,12 @@ let chart1 = new Chart(ctx, {
             data :[100,165,189],
             },
             z,
+            arrayOFObject[0],
             
-        ],
-    },
+            ],
+     },
     options: {},
-
 });
+//  for(let q=0;q<arrayOFObject.length;q++){
+// }
+console.log(chart1.data.datasets);
