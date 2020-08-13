@@ -37,114 +37,114 @@ for (let i=0;i<36;i++){
      if (i<11){
          dataCrime[0].push(arrayTransition[i]);
      }
-     if(i>10&&i<21)
+     if(i>10&&i<=21)
      {
         dataCrime[1].push(arrayTransition[i]);
      }
-     if(i>21&&i<32)
+     if(i>21&&i<=32)
      {
         dataCrime[2].push(arrayTransition[i]);
-     } if(i>32&&i<43)
+     } if(i>32&&i<=43)
      {
         dataCrime[3].push(arrayTransition[i]);
-     } if(i>43&&i<54)
+     } if(i>43&&i<=54)
      {
         dataCrime[4].push(arrayTransition[i]);
-     } if(i>54&&i<65)
+     } if(i>54&&i<=65)
      {
         dataCrime[5].push(arrayTransition[i]);
-     } if(i>65&&i<76)
+     } if(i>65&&i<=76)
      {
         dataCrime[6].push(arrayTransition[i]);
-     } if(i>76&&i<87)
+     } if(i>76&&i<=87)
      {
         dataCrime[7].push(arrayTransition[i]);
-     } if(i>87&&i<98)
+     } if(i>87&&i<=98)
      {
         dataCrime[8].push(arrayTransition[i]);
-     } if(i>98&&i<109)
+     } if(i>98&&i<=109)
      {
         dataCrime[9].push(arrayTransition[i]);
-     } if(i>109&&i<120)
+     } if(i>109&&i<=120)
      {
         dataCrime[10].push(arrayTransition[i]);
-     } if(i>120&&i<131)
+     } if(i>120&&i<=131)
      {
         dataCrime[11].push(arrayTransition[i]);
-     } if(i>131&&i<142)
+     } if(i>131&&i<=142)
      {
         dataCrime[12].push(arrayTransition[i]);
-     } if(i>142&&i<153)
+     } if(i>142&&i<=153)
      {
         dataCrime[13].push(arrayTransition[i]);
-     } if(i>153&&i<164)
+     } if(i>153&&i<=164)
      {
         dataCrime[14].push(arrayTransition[i]);
-     } if(i>164&&i<175)
+     } if(i>164&&i<=175)
      {
         dataCrime[15].push(arrayTransition[i]);
-     } if(i>175&&i<186)
+     } if(i>175&&i<=186)
      {
         dataCrime[16].push(arrayTransition[i]);
      }
-     if(i>186&&i<197)
+     if(i>186&&i<=197)
      {
         dataCrime[17].push(arrayTransition[i]);
-     } if(i>197&&i<208)
+     } if(i>197&&i<=208)
      {
         dataCrime[18].push(arrayTransition[i]);
-     } if(i>208&&i<219)
+     } if(i>208&&i<=219)
      {
         dataCrime[19].push(arrayTransition[i]);
-     } if(i>219&&i<230)
+     } if(i>219&&i<=230)
      {
         dataCrime[20].push(arrayTransition[i]);
-     } if(i>230&&i<241)
+     } if(i>230&&i<=241)
      {
         dataCrime[21].push(arrayTransition[i]);
-     } if(i>241&&i<252)
+     } if(i>241&&i<=252)
      {
         dataCrime[22].push(arrayTransition[i]);
-     } if(i>252&&i<263)
+     } if(i>252&&i<=263)
      {
         dataCrime[23].push(arrayTransition[i]);
-     } if(i>263&&i<274)
+     } if(i>263&&i<=274)
      {
         dataCrime[24].push(arrayTransition[i]);
-     } if(i>274&&i<285)
+     } if(i>274&&i<=285)
      {
         dataCrime[25].push(arrayTransition[i]);
-     } if(i>285&&i<296)
+     } if(i>285&&i<=296)
      {
         dataCrime[26].push(arrayTransition[i]);
-     } if(i>296&&i<307)
+     } if(i>296&&i<=307)
      {
         dataCrime[27].push(arrayTransition[i]);
-     } if(i>307&&i<318)
+     } if(i>307&&i<=318)
      {
         dataCrime[28].push(arrayTransition[i]);
-     } if(i>318&&i<329)
+     } if(i>318&&i<=329)
      {
         dataCrime[29].push(arrayTransition[i]);
-     } if(i>329&&i<340)
+     } if(i>329&&i<=340)
      {
         dataCrime[30].push(arrayTransition[i]);
-     } if(i>340&&i<351)
+     } if(i>340&&i<=351)
      {
         dataCrime[31].push(arrayTransition[i]);
-     } if(i>351&&i<362)
+     } if(i>351&&i<=362)
      {
         dataCrime[32].push(arrayTransition[i]);
-     } if(i>362&&i<373)
+     } if(i>362&&i<=373)
      {
         dataCrime[33].push(arrayTransition[i]);
-     } if(i>373&&i<384)
+     } if(i>373&&i<=384)
      {
         dataCrime[34].push(arrayTransition[i]);
-     } if(i>384&&i<395)
+     } if(i>384&&i<=395)
      {
         dataCrime[35].push(arrayTransition[i]);
-     } if(i>395&&i<406)
+     } if(i>395&&i<=406)
      {
         dataCrime[36].push(arrayTransition[i]);
      }
@@ -182,7 +182,6 @@ let chart1 = new Chart(ctx, {
         datasets: [
             arrayOFObject[0],
             arrayOFObject[1],
-            arrayOFObject[3],
             arrayOFObject[2],
             arrayOFObject[3],
             arrayOFObject[4],
