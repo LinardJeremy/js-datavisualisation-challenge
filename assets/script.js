@@ -1,16 +1,12 @@
 let crime = document.getElementById(
     "Crimes_et_d.C3.A9lits_enregistr.C3.A9s_par_les_services_de_police"
 );
-
 let canvas = document.createElement("canvas");
-
 function insertAfter(referenceNode, newNode) {
     referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
 }
 insertAfter(crime, canvas);
-
 canvas.id = "chart1";
-
 let ctx = document.getElementById("chart1").getContext("2d");
 let x = document.getElementById("tbodyChart1");
 let list = document.getElementById("table1").getElementsByTagName("th");
