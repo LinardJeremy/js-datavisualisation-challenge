@@ -37,7 +37,6 @@ for (let i=0;i<31;i++){
 for (let i=0;i<31;i++){
     arrayColorRed.push("red");
 }
-console.log(arrayColorGreen);
 // Recup data table2
 
 // Création chart
